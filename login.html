@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Weather Forecast | Login</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', path='/layout.css') }}"/>
+        <style type="text/css">
+            .container {
+                background: #a8abaf url("{{ url_for('img', path='/background.jpeg') }}") no-repeat center fixed;
+                background-size: cover;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="box">
+                <form action="/login/" method="post">
+                    <label>Login: </label><input type="text" name="user" id="user"><br/><br/>
+                    <label>Senha: </label><input type="password" name="password" id="password"><br/><br/>
+                    <input type="submit" value="Enter" id="enter">   <input type="reset" value="Clear" id="clear">
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

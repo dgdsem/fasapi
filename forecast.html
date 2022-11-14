@@ -1,0 +1,30 @@
+<Html>
+    <head>
+        <title>Weather Forecast | Forecast</title>
+        <style type="text/css">
+            .container {
+                background: #a8abaf url("{{ url_for('img', path='/background.jpeg') }}") no-repeat center fixed;
+                background-size: cover;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                font-weight: bold;
+                font-family: Arial, Helvetica, sans-serif;
+                color: rgb(3, 3, 3);
+            }
+            .box {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                background:lightgoldenrodyellow;
+            }
+        </style>
+    </head>
+    <body class="container">
+        <h3>Carregando informações...</h3>
+    </body>
+    <script type="text/javascript" src="{{ url_for('js', path='/script.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('js', path='/weatherforecast.js') }}"></script>
+</Html>
